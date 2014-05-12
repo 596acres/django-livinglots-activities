@@ -2,7 +2,7 @@ from django import template
 
 from classytags.arguments import Argument
 from classytags.core import Options
-from classytags.helpers import AsTag, InclusionTag
+from classytags.helpers import AsTag
 
 from actstream.models import Action
 
