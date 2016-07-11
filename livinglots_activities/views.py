@@ -43,6 +43,6 @@ class BaseActivityJSONListView(JSONResponseMixin, ListView):
         paginator = context['paginator']
         page_obj = context['page_obj']
         return self.render_json_response({
-            'actions': [self.get_action_dict(a) for a in self.object_list],
+            'actions': [self.get_action_dict(a) for a in context['object_list']],
             'pagination': self.get_pagination_dict(paginator, page_obj),
         })
